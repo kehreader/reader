@@ -458,6 +458,14 @@
     text-transform: uppercase;
     color: var(--cream-dim);
   }
+  .stats-grid.single{
+    grid-template-columns: 1fr;
+    padding: 28px 0;
+  }
+  .stats-grid.single .stat{
+    border-right: none;
+  }
+  .stats-grid.single .stat-num{ font-size: 1.7rem; }
 
   /* ---------- testimonials ---------- */
   .cta-band{
@@ -487,6 +495,12 @@
     border-radius: 2px;
     padding: 28px 26px 24px;
     position: relative;
+  }
+  .praise .stars{
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
   }
   .praise p{
     font-family:'Fraunces', serif;
@@ -705,54 +719,57 @@
 
       <div class="shelf">
         <a href="project-the-last-love-letter.html" class="spine c1">
-          <span>The Last Love Letter — Contemporary Romance</span>
+          <span>The Last Love Letter</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-missing-chapter.html" class="spine c2">
-          <span>The Missing Chapter — Psychological Thriller</span>
+          <span>The Missing Chapter</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-kingdom-beyond-the-mist.html" class="spine c3">
-          <span>The Kingdom Beyond the Mist — High Fantasy</span>
+          <span>The Kingdom Beyond the Mist</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-beyond-the-red-planet.html" class="spine c4">
-          <span>Beyond the Red Planet — Science Fiction</span>
+          <span>Beyond the Red Planet</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-house-that-remembered.html" class="spine c5">
-          <span>The House That Remembered — Supernatural Horror</span>
+          <span>The House That Remembered</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-things-we-never-said.html" class="spine c6">
-          <span>Things We Never Said — Literary Fiction</span>
+          <span>Things We Never Said</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-letters-from-bellamy-street.html" class="spine c1">
-          <span>Letters from Bellamy Street — Historical Romance</span>
+          <span>Letters from Bellamy Street</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-crown-of-ash.html" class="spine c2">
-          <span>The Crown of Ash — Dark Fantasy</span>
+          <span>The Crown of Ash</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-island-at-the-end-of-the-world.html" class="spine c3">
-          <span>The Island at the End of the World — Adventure</span>
+          <span>The Island at the End of the World</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-clockmakers-secret.html" class="spine c4">
-          <span>The Clockmaker's Secret — Historical Mystery</span>
+          <span>The Clockmaker's Secret</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-seventh-photograph.html" class="spine c5">
-          <span>The Seventh Photograph — Crime Mystery</span>
+          <span>The Seventh Photograph</span>
           <span class="spine-tag">Read →</span>
         </a>
         <a href="project-the-map-beneath-the-school.html" class="spine c6">
-          <span>The Map Beneath the School — YA Adventure</span>
+          <span>The Map Beneath the School</span>
           <span class="spine-tag">Read →</span>
         </a>
-        <div class="spine c1"><span>Working Title Thirteen — Beta Read</span></div>
+        <a href="project-book-cover-design.html" class="spine c1">
+          <span>Book Cover Design</span>
+          <span class="spine-tag">Read →</span>
+        </a>
       </div>
       <p class="shelf-note">13 recent projects · replace each spine with a project name, service tag, and link</p>
     </div>
@@ -781,20 +798,12 @@
   </section>
 
   <!-- STATS -->
-  <section id="stats" style="padding-top:0;">
+  <section id="stats" style="padding-top:0; padding-bottom:0;">
     <div class="wrap">
-      <div class="stats-grid">
+      <div class="stats-grid single">
         <div class="stat">
-          <span class="stat-num">120+</span>
-          <span class="stat-label">Manuscripts Read</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">40+</span>
-          <span class="stat-label">Covers Designed</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">8 yrs</span>
-          <span class="stat-label">In Publishing</span>
+          <span class="stat-num">5 yrs</span>
+          <span class="stat-label">Reading &amp; Editing Experience</span>
         </div>
       </div>
     </div>
@@ -815,19 +824,51 @@
 
       <div class="praise-grid">
         <div class="praise">
-          <p>"[Placeholder quote — what changed about their manuscript
-          after working together, in their own words.]"</p>
-          <div class="who">— Author Name, Book Title</div>
+          <div class="stars">★★★★★</div>
+          <p>"The editing transformed my manuscript without taking away
+          my voice. The pacing feels smoother, the characters have more
+          emotional depth, and the story finally reads the way I
+          imagined it."</p>
+          <div class="who">— Eleanor Hayes, Letters from Bellamy Street</div>
         </div>
         <div class="praise">
-          <p>"[Placeholder quote — be specific: a deadline hit, a
-          craft problem solved, a launch result.]"</p>
-          <div class="who">— Author Name, Book Title</div>
+          <div class="stars">★★★★★</div>
+          <p>"The developmental feedback helped me see problems in the
+          story that I had completely missed. The world-building is
+          clearer, the stakes are stronger, and the final manuscript
+          feels much more complete."</p>
+          <div class="who">— Adrian Blackwood, The Crown of Ash</div>
         </div>
         <div class="praise">
-          <p>"[Placeholder quote — what it was like to work with you,
-          day to day.]"</p>
-          <div class="who">— Author Name, Book Title</div>
+          <div class="stars">★★★★★</div>
+          <p>"The editing made a huge difference to the tension and
+          readability of my manuscript. Scenes that once felt flat now
+          have sharper dialogue, stronger pacing, and much more
+          suspense."</p>
+          <div class="who">— Nathan Cole, The Seventh Photograph</div>
+        </div>
+        <div class="praise">
+          <div class="stars">★★★★★</div>
+          <p>"My manuscript finally feels polished while still sounding
+          like me. The character voice is stronger, the opening has
+          more impact, and the story flows much better from scene to
+          scene."</p>
+          <div class="who">— Maya Sterling, The Map Beneath the School</div>
+        </div>
+        <div class="praise">
+          <div class="stars">★★★★★</div>
+          <p>"The developmental work helped me understand what my story
+          was missing. The motivation, stakes, and mystery are much
+          clearer now, and the manuscript feels far more engaging."</p>
+          <div class="who">— James Carter, The Island at the End of the World</div>
+        </div>
+        <div class="praise">
+          <div class="stars">★★★★★</div>
+          <p>"The editing brought out the atmosphere I wanted from the
+          beginning. The prose is cleaner, the mystery is easier to
+          follow, and the tension builds naturally without losing the
+          historical feel."</p>
+          <div class="who">— Isabelle Grant, The Clockmaker's Secret</div>
         </div>
       </div>
     </div>
