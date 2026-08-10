@@ -332,14 +332,14 @@
     display:flex;
     align-items: flex-end;
     gap: 10px;
-    overflow-x: auto;
     padding: 30px 4px 26px;
     border-bottom: 6px solid var(--surface-2);
-    scrollbar-width: thin;
   }
   .spine{
-    flex: 0 0 auto;
-    width: 62px;
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
     height: 300px;
     border-radius: 2px 2px 0 0;
     display:flex;
@@ -350,8 +350,26 @@
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     box-shadow: inset -6px 0 10px -6px rgba(0,0,0,0.5), inset 6px 0 10px -6px rgba(255,255,255,0.05);
     border: 1px solid rgba(0,0,0,0.25);
+    overflow: hidden;
+  }
+  @media (max-width: 760px){
+    .shelf{ overflow-x: auto; scrollbar-width: thin; }
+    .spine{ flex: 0 0 auto; width: 56px; }
   }
   .spine:hover{ transform: translateY(-14px); box-shadow: 0 18px 30px -14px rgba(0,0,0,0.6); }
+  a.spine{ text-decoration:none; cursor: pointer; }
+  a.spine .spine-tag{
+    position:absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    font-family:'Courier Prime', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    writing-mode: horizontal-tb;
+  }
   .spine span{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -407,14 +425,14 @@
   }
   .stats-grid{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
     padding: 44px 0;
   }
   @media (max-width: 720px){
-    .stats-grid{ grid-template-columns: repeat(2, 1fr); }
+    .stats-grid{ grid-template-columns: 1fr; }
   }
   .stat{
     text-align:center;
@@ -686,14 +704,57 @@
       </div>
 
       <div class="shelf">
-        <div class="spine c1"><span>Working Title One — Edited</span></div>
-        <div class="spine c2"><span>Working Title Two — Beta Read</span></div>
-        <div class="spine c3"><span>Working Title Three — Cover</span></div>
-        <div class="spine c4"><span>Working Title Four — Launch</span></div>
-        <div class="spine c5"><span>Working Title Five — Edited</span></div>
-        <div class="spine c6"><span>Working Title Six — Cover</span></div>
+        <a href="project-the-last-love-letter.html" class="spine c1">
+          <span>The Last Love Letter — Contemporary Romance</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-missing-chapter.html" class="spine c2">
+          <span>The Missing Chapter — Psychological Thriller</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-kingdom-beyond-the-mist.html" class="spine c3">
+          <span>The Kingdom Beyond the Mist — High Fantasy</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-beyond-the-red-planet.html" class="spine c4">
+          <span>Beyond the Red Planet — Science Fiction</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-house-that-remembered.html" class="spine c5">
+          <span>The House That Remembered — Supernatural Horror</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-things-we-never-said.html" class="spine c6">
+          <span>Things We Never Said — Literary Fiction</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-letters-from-bellamy-street.html" class="spine c1">
+          <span>Letters from Bellamy Street — Historical Romance</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-crown-of-ash.html" class="spine c2">
+          <span>The Crown of Ash — Dark Fantasy</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-island-at-the-end-of-the-world.html" class="spine c3">
+          <span>The Island at the End of the World — Adventure</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-clockmakers-secret.html" class="spine c4">
+          <span>The Clockmaker's Secret — Historical Mystery</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-seventh-photograph.html" class="spine c5">
+          <span>The Seventh Photograph — Crime Mystery</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <a href="project-the-map-beneath-the-school.html" class="spine c6">
+          <span>The Map Beneath the School — YA Adventure</span>
+          <span class="spine-tag">Read →</span>
+        </a>
+        <div class="spine c1"><span>Working Title Thirteen — Beta Read</span></div>
       </div>
-      <p class="shelf-note">6 recent projects · replace each spine with a project name, service tag, and link</p>
+      <p class="shelf-note">13 recent projects · replace each spine with a project name, service tag, and link</p>
     </div>
   </section>
 
@@ -734,10 +795,6 @@
         <div class="stat">
           <span class="stat-num">8 yrs</span>
           <span class="stat-label">In Publishing</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">[XX]</span>
-          <span class="stat-label">[Your Specialty Genres]</span>
         </div>
       </div>
     </div>
