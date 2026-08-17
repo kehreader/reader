@@ -127,7 +127,7 @@
     margin:0; padding:0;
     font-size: 0.88rem;
   }
-  .navlinks button.scroll-link{
+  .navlinks button.scroll-link, .navlinks a{
     text-decoration:none;
     color: var(--cream-dim);
     position:relative;
@@ -135,8 +135,8 @@
     white-space: nowrap;
     transition: color 0.2s ease;
   }
-  .navlinks button.scroll-link:hover{ color: var(--cream); }
-  .navlinks button.scroll-link::after{
+  .navlinks button.scroll-link:hover, .navlinks a:hover{ color: var(--cream); }
+  .navlinks button.scroll-link::after, .navlinks a::after{
     content:'';
     position:absolute; left:0; right:0; bottom:0;
     height:1px; background: var(--gold);
@@ -144,7 +144,7 @@
     transform-origin: left;
     transition: transform 0.25s ease;
   }
-  .navlinks button.scroll-link:hover::after{ transform: scaleX(1); }
+  .navlinks button.scroll-link:hover::after, .navlinks a:hover::after{ transform: scaleX(1); }
 
   @media (max-width: 720px){
     .navlinks{ display:none; }
@@ -467,6 +467,21 @@
   }
   .stats-grid.single .stat-num{ font-size: 1.7rem; }
 
+  .stats-grid.double{
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 64px;
+    padding: 28px 0;
+  }
+  .stats-grid.double .stat{
+    border-right: none;
+    text-align: center;
+  }
+  .stats-grid.double .stat-num{ font-size: 1.7rem; }
+  @media (max-width: 480px){
+    .stats-grid.double{ grid-template-columns: 1fr; gap: 20px; }
+  }
+
   /* ---------- testimonials ---------- */
   .cta-band{
     text-align:center;
@@ -623,10 +638,8 @@
     <button type="button" class="brand scroll-link" data-target="top">Kehinde Reader <span>·</span> Editorial Studio</button>
     <ul class="navlinks">
       <li><button type="button" class="scroll-link" data-target="top">Home</button></li>
-      <li><button type="button" class="scroll-link" data-target="about">About Us</button></li>
-      <li><button type="button" class="scroll-link" data-target="services">Services</button></li>
-      <li><button type="button" class="scroll-link" data-target="work">Portfolio</button></li>
-      <li><button type="button" class="scroll-link" data-target="contact">Contact Us</button></li>
+      <li><a href="portfolio-covers.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </nav>
 </header>
@@ -645,7 +658,7 @@
         reaches readers.
       </p>
       <div class="cta-row">
-        <button type="button" class="btn btn-primary scroll-link" data-target="contact">Start a project</button>
+        <a href="contact.html" class="btn btn-primary">Start a project</a>
         <button type="button" class="btn btn-ghost scroll-link" data-target="work">See the work</button>
       </div>
     </div>
@@ -668,33 +681,28 @@
           <span class="eyebrow">How a book gets made</span>
           <h2>Four stages, one shelf-ready book</h2>
         </div>
-        <p class="marginalia">Skip a stage and it shows — <br>every book gets all four.</p>
       </div>
 
       <div class="journey">
         <div class="stage">
-          <span class="stage-num">01 / Intake</span>
           <h3>Beta Reading</h3>
           <p>A full read from a real reader's seat — pacing, plot holes,
           characters that don't land, and where attention drifts. Notes
           you can act on, not just praise.</p>
         </div>
         <div class="stage">
-          <span class="stage-num">02 / Craft</span>
           <h3>Developmental &amp; Line Editing</h3>
           <p>Structural passes for story and argument, then sentence-level
           editing for voice, rhythm, and clarity — without flattening
           what makes it yours.</p>
         </div>
         <div class="stage">
-          <span class="stage-num">03 / Object</span>
           <h3>Cover Design</h3>
           <p>Genre-aware covers built to work as a thumbnail first and a
           print jacket second, with typography and imagery that signal
           the right promise to the right reader.</p>
         </div>
         <div class="stage">
-          <span class="stage-num">04 / Launch</span>
           <h3>Book Marketing</h3>
           <p>Positioning, blurb, categories, and a launch sequence —
           the unglamorous work that decides whether the book everyone
@@ -714,7 +722,6 @@
           <span class="eyebrow">Selected work</span>
           <h2>A shelf of recent projects</h2>
         </div>
-        <p class="marginalia">Swap these spines for<br>your real titles.</p>
       </div>
 
       <div class="shelf">
@@ -771,7 +778,6 @@
           <span class="spine-tag">Read →</span>
         </a>
       </div>
-      <p class="shelf-note">13 recent projects · replace each spine with a project name, service tag, and link</p>
     </div>
   </section>
 
@@ -800,10 +806,14 @@
   <!-- STATS -->
   <section id="stats" style="padding-top:0; padding-bottom:0;">
     <div class="wrap">
-      <div class="stats-grid single">
+      <div class="stats-grid double">
         <div class="stat">
           <span class="stat-num">5 yrs</span>
           <span class="stat-label">Reading &amp; Editing Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Manuscripts Read</span>
         </div>
       </div>
     </div>
@@ -883,7 +893,7 @@
       <h2>Have a manuscript that needs a home?</h2>
       <p>Whether it's a first beta read or a full edit-to-launch package,
       let's talk about where your book is and what it needs next.</p>
-      <button type="button" class="btn btn-primary scroll-link" data-target="contact">Start a project</button>
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
     </div>
   </section>
 
