@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Last Love Letter</title>
+  <style>
+    :root {
+      --ink: #2f2730;
+      --muted: #756875;
+      --accent: #9b5f78;
+      --paper: #fffaf7;
+      --line: #eadde1;
+      --shadow: 0 18px 45px rgba(67, 42, 54, 0.12);
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    linear-gradient(rgba(255, 250, 247, 0.92), rgba(255, 250, 247, 0.92)),
+    radial-gradient(circle at top left, #f3dfe5, transparent 38%),
+    radial-gradient(circle at bottom right, #e8d9e8, transparent 42%);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.8;
+}
+
+.book {
+  width: min(100% - 2rem, 900px);
+  margin: 2rem auto;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(155, 95, 120, 0.14);
+}
+
+header {
+  padding: 5rem 2rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(255,255,255,.7), rgba(247,231,237,.65));
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: var(--accent);
+  font-size: clamp(2.2rem, 7vw, 4.5rem);
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+}
+
+.author {
+  margin: 0 0 2rem;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.metadata {
+  display: grid;
+  gap: .65rem;
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .95rem;
+  text-align: left;
+}
+
+.metadata strong {
+  color: var(--ink);
+}
+
+main {
+  padding: 3rem clamp(1.25rem, 6vw, 5rem) 5rem;
+}
+
+.chapter-label {
+  margin: 0 0 .5rem;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .85rem;
+  font-weight: bold;
+  letter-spacing: .18em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 3rem;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: normal;
+  text-align: center;
+}
+
+.chapter {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+p {
+  margin: 0 0 1.25rem;
+  font-size: 1.08rem;
+}
+
+.letter {
+  margin: 2rem 0;
+  padding: 1.5rem clamp(1rem, 4vw, 2.5rem);
+  border-left: 3px solid var(--accent);
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(67, 42, 54, 0.06);
+  font-style: italic;
+}
+
+.letter p {
+  margin-bottom: 1rem;
+}
+
+.letter p:last-child {
+  margin-bottom: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.emphasis {
+  font-weight: bold;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 600px) {
+  .book {
+    width: 100%;
+    margin: 0;
+    border: 0;
+  }
+
+  header {
+    padding: 3.5rem 1.25rem 3rem;
+  }
+
+  main {
+    padding-top: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <article class="book">
+    <header>
+      <h1>The Last Love Letter</h1>
+      <p class="author">Amelia Rowan</p>
+
+```
+  <div class="metadata">
+    <div><strong>Genre:</strong> Contemporary Romance</div>
+    <div><strong>Manuscript Length:</strong> 78,000 words</div>
+    <div><strong>Beta-Reading Stage:</strong> First Complete Draft</div>
+  </div>
+</header>
+
+<main>
+  <section class="chapter" aria-labelledby="chapter-one-title">
+    <p class="chapter-label">Chapter One</p>
+    <h2 id="chapter-one-title">The Envelope</h2>
+
+    <p>Mara had always believed that houses remembered.</p>
+
+    <p>Not in the way her grandmother claimed, with ghosts wandering through hallways and whispering names in the middle of the night.</p>
+
+    <p>Houses remembered differently.</p>
+
+    <p>They remembered the smell of Sunday dinners long after the plates had been washed. They remembered children's footsteps on wooden stairs. They remembered arguments behind closed doors and laughter that seemed to settle into the walls.</p>
+
+    <p>Her grandmother's house remembered everything.</p>
+
+    <p>Mara stood in the middle of the upstairs bedroom and looked around.</p>
+
+    <p>Three days had passed since the funeral.</p>
+
+    <p>Three days of sorting through a lifetime that didn't belong to her.</p>
+
+    <p>The room looked exactly as it had when she was a child.</p>
+
+    <p>The faded curtains.</p>
+
+    <p>The wooden wardrobe.</p>
+
+    <p>The little porcelain bird sitting beside the lamp.</p>
+
+    <p>Even the blue blanket her grandmother had knitted when Mara was twelve was still folded neatly at the end of the bed.</p>
+
+    <p>Mara picked it up and held it against her chest.</p>
+
+    <p>For a moment, she was twelve again.</p>
+
+    <p>Her grandmother was downstairs making tea.</p>
+
+    <p>Her grandfather was arguing with the radio.</p>
+
+    <p>And Elias was sitting on the windowsill, throwing pieces of bread to the birds.</p>
+
+    <p>Mara closed her eyes.</p>
+
+    <p>She hadn't thought about Elias in months.</p>
+
+    <p>That wasn't true.</p>
+
+    <p>She thought about him every day.</p>
+
+    <p>She had simply become very good at pretending she didn't.</p>
+
+    <p>"Mara?"</p>
+
+    <p>She opened her eyes.</p>
+
+    <p>Her mother stood in the doorway.</p>
+
+    <p>"You've been up here for hours."</p>
+
+    <p>"I'm almost finished."</p>
+
+    <p>Her mother looked around the room.</p>
+
+    <p>"You don't have to do everything today."</p>
+
+    <p>"I know."</p>
+
+    <p>"You don't."</p>
+
+    <p>Mara smiled faintly.</p>
+
+    <p>"I said I know."</p>
+
+    <p>Her mother walked toward her and squeezed her shoulder.</p>
+
+    <p>"Come downstairs when you're ready."</p>
+
+    <p>When the door closed, Mara sat on the edge of the bed.</p>
+
+    <p>The house became quiet again.</p>
+
+    <p>She looked at the floor.</p>
+
+    <p>Something had caught her attention.</p>
+
+    <p>A narrow gap ran beneath the wardrobe.</p>
+
+    <p>Mara frowned.</p>
+
+    <p>She crouched and moved the wardrobe slightly.</p>
+
+    <p>One of the floorboards was loose.</p>
+
+    <p>She slid her fingers underneath it.</p>
+
+    <p>The board lifted.</p>
+
+    <p>Beneath it was a small wooden box.</p>
+
+    <p>Mara stared at it.</p>
+
+    <p>Her grandmother had hidden things before.</p>
+
+    <p>Old photographs.</p>
+
+    <p>Jewelry.</p>
+
+    <p>Letters from her grandfather.</p>
+
+    <p>But she had never mentioned this.</p>
+
+    <p>Mara carried the box to the bed.</p>
+
+    <p>It was covered in dust except for the center, where someone's fingers had recently disturbed it.</p>
+
+    <p>Her heart began beating faster.</p>
+
+    <p>She opened the lid.</p>
+
+    <p>Inside were photographs.</p>
+
+    <p>A silver necklace.</p>
+
+    <p>An old train ticket.</p>
+
+    <p>And an envelope.</p>
+
+    <p>Her name was written across the front.</p>
+
+    <p class="centered emphasis">Mara.</p>
+
+    <p>She stopped breathing.</p>
+
+    <p>The handwriting was familiar.</p>
+
+    <p>Painfully familiar.</p>
+
+    <p>She picked up the envelope.</p>
+
+    <p>There were only six letters on the back.</p>
+
+    <p class="centered emphasis">Elias.</p>
+
+    <p>"No."</p>
+
+    <p>The word escaped before she could stop it.</p>
+
+    <p>She sat down.</p>
+
+    <p>Elias had been dead for three years.</p>
+
+    <p>There were facts in life that couldn't be argued with.</p>
+
+    <p>The sun rose.</p>
+
+    <p>Winter came.</p>
+
+    <p>People died.</p>
+
+    <p>Elias was dead.</p>
+
+    <p>She had stood at his funeral.</p>
+
+    <p>She had watched his parents hold each other.</p>
+
+    <p>She had listened to the priest talk about a young life that had ended too soon.</p>
+
+    <p>She had cried until there was nothing left inside her.</p>
+
+    <p>Then she had gone home and removed every photograph of him from her bedroom.</p>
+
+    <p>She had deleted his number.</p>
+
+    <p>She had stopped visiting the café where they used to meet.</p>
+
+    <p>She had convinced herself that forgetting him was the only way to keep living.</p>
+
+    <p>Now his handwriting was sitting in her hands.</p>
+
+    <p>Mara opened the envelope.</p>
+
+    <p>Inside was a single sheet of paper.</p>
+
+    <p>Her fingers trembled as she unfolded it.</p>
+
+    <div class="letter">
+      <p>Dear Mara,</p>
+
+      <p>She stopped.</p>
+
+      <p>Even the way he wrote her name was familiar.</p>
+
+      <p>If you're reading this, I've already run out of time.</p>
+
+      <p>Mara swallowed.</p>
+
+      <p>She continued.</p>
+
+      <p>There are things I should have told you.</p>
+    </div>
+
+    <p>The room seemed suddenly colder.</p>
+
+    <div class="letter">
+      <p>I know you think I left because I stopped loving you.</p>
+    </div>
+
+    <p>Mara's eyes filled with tears.</p>
+
+    <p>She looked away.</p>
+
+    <p>"No."</p>
+
+    <p>But she kept reading.</p>
+
+    <div class="letter">
+      <p>That isn't what happened.</p>
+    </div>
+
+    <p>A tear landed on the page.</p>
+
+    <p>She wiped it away quickly.</p>
+
+    <div class="letter">
+      <p>Meet me at the old train station.</p>
+    </div>
+
+    <p>Mara stared at the sentence.</p>
+
+    <p>Below it was a date.</p>
+
+    <p>Tomorrow.</p>
+
+    <p>Her heart began pounding.</p>
+
+    <p>She read the final line.</p>
+
+    <div class="letter">
+      <p>Please come alone.</p>
+    </div>
+
+    <p>The letter slipped from her hand.</p>
+
+    <p>For several minutes, she sat completely still.</p>
+
+    <p>Then she looked toward the window.</p>
+
+    <p>The old train station was twelve miles away.</p>
+
+    <p>It had been abandoned for years.</p>
+
+    <p>No trains stopped there anymore.</p>
+
+    <p>No one went there.</p>
+
+    <p>Except Mara.</p>
+
+    <p>Once.</p>
+
+    <p>On the night she and Elias had ended everything.</p>
+
+    <p>She remembered standing beneath the station clock while rain poured around them.</p>
+
+    <p>She remembered saying things she didn't mean.</p>
+
+    <p>She remembered him walking away.</p>
+
+    <p>And she remembered promising herself that she would never return.</p>
+
+    <p>Mara picked up the letter again.</p>
+
+    <p>There was something else inside the envelope.</p>
+
+    <p>A train ticket.</p>
+
+    <p>Two seats.</p>
+
+    <p>One destination.</p>
+
+    <p class="centered emphasis">Home.</p>
+
+    <p>Mara stared at it.</p>
+
+    <p>Then someone knocked downstairs.</p>
+
+    <p>"Mara?"</p>
+
+    <p>Her mother's voice.</p>
+
+    <p>She quickly folded the letter and slipped it into her pocket.</p>
+
+    <p>"I'm coming."</p>
+
+    <p>She looked at the photograph of Elias one last time.</p>
+
+    <p>He was seventeen in the picture.</p>
+
+    <p>Smiling.</p>
+
+    <p>Alive.</p>
+
+    <p>Mara touched the photograph with one finger.</p>
+
+    <p>"Why did you leave this for me?"</p>
+
+    <p>The house gave no answer.</p>
+
+    <p>But somewhere downstairs, the old grandfather clock began to strike.</p>
+
+    <p>One.</p>
+
+    <p>Two.</p>
+
+    <p>Three.</p>
+
+    <p>Mara counted.</p>
+
+    <p>It stopped at twelve.</p>
+
+    <p>She looked toward the hallway.</p>
+
+    <p>Her grandmother's clock had not worked in years.</p>
+
+    <p>And suddenly, Mara remembered something her grandmother had told her when she was little.</p>
+
+    <p>Some letters weren't meant to be opened immediately.</p>
+
+    <p>Some were meant to be opened when you were finally ready to hear the truth.</p>
+
+    <p>Mara wasn't sure she was ready.</p>
+
+    <p>But tomorrow, she would find out.</p>
+  </section>
+</main>
+```
+
+  </article>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta-Reading Report</title>
+  <style>
+    :root {
+      --ink: #2f2a2a;
+      --muted: #6f6464;
+      --accent: #8b4f5d;
+      --accent-light: #f4e8eb;
+      --paper: #fffdfb;
+      --line: #e6d9d5;
+      --background: #f3eeeb;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 64px 72px;
+  background: var(--paper);
+  box-shadow: 0 12px 35px rgba(55, 38, 38, 0.12);
+}
+
+header {
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 36px;
+}
+
+h1 {
+  margin: 0 0 24px;
+  color: var(--accent);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+  margin: 0;
+}
+
+.metadata div {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+dt {
+  display: inline;
+  color: var(--muted);
+  font-weight: bold;
+}
+
+dd {
+  display: inline;
+  margin: 0 0 0 6px;
+}
+
+h2 {
+  margin: 42px 0 16px;
+  color: var(--accent);
+  font-size: 1.65rem;
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 28px 0 10px;
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+ul {
+  margin: 12px 0 22px;
+  padding-left: 26px;
+}
+
+li {
+  margin: 8px 0;
+}
+
+.questions {
+  padding: 22px 26px;
+  background: var(--accent-light);
+  border-left: 5px solid var(--accent);
+}
+
+.questions p {
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.recommendation {
+  margin-top: 28px;
+  padding: 24px 28px;
+  background: #fbf4f1;
+  border: 1px solid var(--line);
+}
+
+.rating {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .page {
+    margin: 0;
+    padding: 36px 24px;
+  }
+
+  .metadata {
+    grid-template-columns: 1fr;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Beta-Reading Report</h1>
+
+```
+  <dl class="metadata">
+    <div>
+      <dt>Book:</dt>
+      <dd><em>The Last Love Letter</em></dd>
+    </div>
+    <div>
+      <dt>Author:</dt>
+      <dd>Amelia Rowan</dd>
+    </div>
+    <div>
+      <dt>Genre:</dt>
+      <dd>Contemporary Romance</dd>
+    </div>
+    <div>
+      <dt>Manuscript Stage:</dt>
+      <dd>First Complete Draft</dd>
+    </div>
+  </dl>
+</header>
+
+<section>
+  <h2>Overall Impression</h2>
+  <p>
+    The manuscript has a strong emotional premise. The combination of unresolved love,
+    grief, a mysterious letter, and the abandoned train station gives the story an
+    immediate emotional and narrative hook.
+  </p>
+  <p>
+    The strongest element is Mara's relationship with Elias. Even before the reader knows
+    the full history between them, the manuscript creates the feeling that their relationship
+    carries unfinished emotional weight.
+  </p>
+</section>
+
+<section>
+  <h2>What Works Well</h2>
+
+  <h3>1. Emotional Hook</h3>
+  <p>
+    The opening immediately establishes Mara's grief and connection to her grandmother.
+  </p>
+  <p>
+    The discovery of Elias's handwriting is particularly effective because it turns an
+    ordinary family mystery into a deeply personal one.
+  </p>
+
+  <h3>2. Atmosphere</h3>
+  <p>
+    The grandmother's house works well as a setting.
+  </p>
+  <p>
+    Details such as the old clock, photographs, furniture, and childhood memories make the
+    house feel connected to Mara's past.
+  </p>
+
+  <h3>3. Mystery</h3>
+  <p>The letter creates several useful questions:</p>
+  <ul>
+    <li>Why did Elias leave the letter?</li>
+    <li>Why did Mara's grandmother have it?</li>
+    <li>Why does the letter ask Mara to return to the train station?</li>
+    <li>What really happened between Mara and Elias?</li>
+    <li>Why does the ticket say “Home”?</li>
+  </ul>
+  <p>These questions encourage the reader to continue.</p>
+</section>
+
+<section>
+  <h2>Areas to Strengthen</h2>
+
+  <h3>Character Motivation</h3>
+  <p>
+    Mara's grief is clear, but the manuscript could explore her emotional history with Elias
+    more gradually.
+  </p>
+  <p>
+    A few carefully placed memories throughout the early chapters would help the reader
+    understand what was lost.
+  </p>
+
+  <h3>Romance Development</h3>
+  <p>
+    Because this is a romance, the relationship should not depend only on the mystery
+    surrounding Elias.
+  </p>
+  <p>The manuscript should show:</p>
+  <ul>
+    <li>Their friendship</li>
+    <li>Their first attraction</li>
+    <li>Their disagreements</li>
+    <li>What made them compatible</li>
+    <li>What eventually separated them</li>
+  </ul>
+  <p>
+    This will make the emotional payoff much stronger.
+  </p>
+
+  <h3>Pacing</h3>
+  <p>
+    The opening is effective, but the mystery should not answer itself too quickly.
+  </p>
+  <p>
+    I recommend allowing several chapters for Mara to uncover the truth.
+  </p>
+</section>
+
+<section>
+  <h2>Reader Questions</h2>
+  <div class="questions">
+    <p>Why did Elias leave?</p>
+    <p>What did Mara misunderstand about their relationship?</p>
+    <p>Why did her grandmother keep the letter?</p>
+    <p>Who knew about the letter before Mara discovered it?</p>
+  </div>
+</section>
+
+<section class="recommendation">
+  <h2>Recommendation</h2>
+  <p><strong>Strong continue.</strong></p>
+  <p>
+    The story has a compelling emotional foundation and enough mystery to carry a full-length
+    romance. The next revision should focus primarily on deepening Mara and Elias's
+    relationship through memories and present-day discoveries.
+  </p>
+  <div class="rating">Beta-reader rating: 8.5/10</div>
+</section>
+```
+
+  </main>
+</body>
+</html>
