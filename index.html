@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AUTHOR'S ATELIER — Editorial &amp; Book Design Studio</title>
+<title>Kehinde Reader — Editorial &amp; Book Design Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -209,49 +209,65 @@
     color: var(--cream);
     background: transparent;
   }
-<div class="hero-showcase">
-  <div class="hero-card">
-    <div class="hero-card-top">
-      <span>AUTHOR SUPPORT STUDIO</span>
-      <span>✦</span>
-    </div>
+  .btn-ghost:hover{ border-color: var(--gold); color: var(--gold-bright); }
 
-    <div class="hero-card-content">
-      <div class="book-icon">📖</div>
-
-      <h3>Bring Your Story<br>Into Focus.</h3>
-
-      <p>
-        Thoughtful feedback, polished writing,
-        and covers that give your book a strong first impression.
-      </p>
-    </div>
-
-    <div class="service-list">
-      <div>
-        <span>01</span>
-        <strong>Beta Reading</strong>
-      </div>
-
-      <div>
-        <span>02</span>
-        <strong>Book Editing</strong>
-      </div>
-
-      <div>
-        <span>03</span>
-        <strong>Book Cover Design</strong>
-      </div>
-    </div>
-
-    <div class="hero-card-footer">
-      <span>FOR INDIE AUTHORS</span>
-      <span>✦</span>
-    </div>
-  </div>
-
-  <div class="gold-circle"></div>
-</div>
+  /* book cover mockup */
+  .cover{
+    position: relative;
+    aspect-ratio: 2 / 3;
+    max-width: 340px;
+    margin-left: auto;
+    background:
+      radial-gradient(120% 140% at 15% 0%, #2a3138 0%, transparent 55%),
+      linear-gradient(155deg, #24303a 0%, #172026 55%, #10161a 100%);
+    border-radius: 2px;
+    box-shadow: -18px 18px 0 -6px rgba(0,0,0,0.35), 0 30px 60px -20px rgba(0,0,0,0.6);
+    border: 1px solid var(--line);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding: 34px;
+    text-align:center;
+  }
+  .cover::before{
+    content:'';
+    position:absolute;
+    left:0; top:0; bottom:0;
+    width: 14px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), transparent);
+  }
+  .cover::after{
+    content:'';
+    position:absolute;
+    top:0; right:0;
+    width:0; height:0;
+    border-style: solid;
+    border-width: 0 34px 34px 0;
+    border-color: transparent var(--ink) transparent transparent;
+    filter: drop-shadow(-2px 2px 3px rgba(0,0,0,0.4));
+  }
+  .cover .rule{
+    width: 46px; height:1px; background: var(--gold);
+    margin: 16px auto;
+  }
+  .cover .foil{
+    font-family:'Fraunces', serif;
+    font-style: italic;
+    font-size: 1.55rem;
+    line-height: 1.25;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold) 45%, #7a5f30 60%, var(--gold-bright));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .cover .sub{
+    font-family:'Courier Prime', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cream-dim);
+    margin-top: 6px;
   }
 
   /* ---------- section shell ---------- */
