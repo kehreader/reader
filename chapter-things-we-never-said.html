@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things We Never Said</title>
+  <style>
+    :root {
+      --paper: #fffdf8;
+      --ink: #252525;
+      --muted: #6f6a63;
+      --accent: #8b5e4a;
+      --line: #ded6cc;
+      --shadow: 0 18px 45px rgba(45, 35, 25, 0.12);
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eee9e2;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.8;
+}
+
+.book {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.title-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.title-page h1 {
+  margin: 0 0 1.5rem;
+  color: var(--accent);
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+}
+
+.title-page .author {
+  margin: 0 0 2.5rem;
+  font-size: 1.35rem;
+}
+
+.details {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.manuscript {
+  padding: 5rem clamp(1.5rem, 8vw, 7rem);
+}
+
+.chapter-heading {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.chapter-heading h2 {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.chapter-heading h3 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.chapter {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+}
+
+.chapter p {
+  margin: 0 0 1.35rem;
+}
+
+.chapter p:first-of-type::first-letter {
+  float: left;
+  margin: 0.08em 0.08em 0 0;
+  color: var(--accent);
+  font-size: 4.2em;
+  line-height: 0.8;
+}
+
+.letter {
+  margin: 2rem 0;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: var(--paper);
+  }
+
+  .book {
+    box-shadow: none;
+  }
+
+  .title-page {
+    min-height: 85vh;
+  }
+
+  .manuscript {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .chapter {
+    font-size: 1.08rem;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .book {
+    box-shadow: none;
+    max-width: none;
+  }
+
+  .title-page {
+    min-height: 100vh;
+    page-break-after: always;
+  }
+
+  .chapter-heading {
+    page-break-after: avoid;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="book">
+    <section class="title-page" aria-labelledby="book-title">
+      <h1 id="book-title">Things We Never Said</h1>
+      <p class="author"><strong>Author:</strong> Sophie Laurent</p>
+      <div class="details">
+        <div>Genre: Literary / Contemporary Fiction</div>
+        <div>Manuscript Length: 69,000 words</div>
+      </div>
+    </section>
+
+```
+<article class="manuscript">
+  <header class="chapter-heading">
+    <h2>Chapter One</h2>
+    <h3>The Funeral</h3>
+  </header>
+
+  <section class="chapter">
+    <p>Sophie saw Daniel before he saw her.</p>
+
+    <p>He stood beneath the oldest tree in the cemetery, hands inside the pockets of his coat.</p>
+
+    <p>Eleven years.</p>
+
+    <p>She had spent eleven years trying not to remember what his face looked like.</p>
+
+    <p>She had failed.</p>
+
+    <p>Daniel looked older.</p>
+
+    <p>Of course he did.</p>
+
+    <p>So did she.</p>
+
+    <p>But there was something about his eyes that hadn't changed.</p>
+
+    <p>She looked away.</p>
+
+    <p>Her father's funeral was not the place for old memories.</p>
+
+    <p>People gathered around the grave.</p>
+
+    <p>Relatives.</p>
+
+    <p>Friends.</p>
+
+    <p>Neighbors.</p>
+
+    <p>People Sophie barely knew.</p>
+
+    <p>Everyone spoke softly.</p>
+
+    <p>Everyone said the same things.</p>
+
+    <p>"He lived a good life."</p>
+
+    <p>"He'll be missed."</p>
+
+    <p>"He was a wonderful man."</p>
+
+    <p>Sophie listened.</p>
+
+    <p>She didn't know whether she believed any of it.</p>
+
+    <p>Her father had been complicated.</p>
+
+    <p>So had their relationship.</p>
+
+    <p>She hadn't spoken to him properly in five years.</p>
+
+    <p>Now he was gone.</p>
+
+    <p>And there was no possibility of fixing that.</p>
+
+    <p>When the funeral ended, people slowly left.</p>
+
+    <p>Sophie remained.</p>
+
+    <p>Daniel remained too.</p>
+
+    <p>Eventually, he walked toward her.</p>
+
+    <p>"Hi."</p>
+
+    <p>She looked at him.</p>
+
+    <p>"Hi."</p>
+
+    <p>Eleven years.</p>
+
+    <p>One word.</p>
+
+    <p>It felt ridiculous.</p>
+
+    <p>"How are you?"</p>
+
+    <p>"Fine."</p>
+
+    <p>He nodded.</p>
+
+    <p>"Me too."</p>
+
+    <p>Neither of them smiled.</p>
+
+    <p>Daniel reached into his coat.</p>
+
+    <p>"I found something."</p>
+
+    <p>He handed her an envelope.</p>
+
+    <p>She recognized the handwriting immediately.</p>
+
+    <p>Their father's.</p>
+
+    <p>Sophie stared at it.</p>
+
+    <p>"What is this?"</p>
+
+    <p>"He left it for us."</p>
+
+    <p>"Us?"</p>
+
+    <p>Daniel nodded.</p>
+
+    <p>"Both of us."</p>
+
+    <p>She opened it.</p>
+
+    <p>Inside was a photograph.</p>
+
+    <p>Two teenagers stood beside a river.</p>
+
+    <p>Sophie remembered the day.</p>
+
+    <p>She remembered Daniel making her laugh.</p>
+
+    <p>She remembered their father's car waiting in the distance.</p>
+
+    <p>She remembered leaving that evening.</p>
+
+    <p>She had spent eleven years telling herself she knew why.</p>
+
+    <p>She turned the photograph over.</p>
+
+    <p>There was writing on the back.</p>
+
+    <p class="letter">You both know why she left.</p>
+
+    <p>Sophie's hands went cold.</p>
+
+    <p>She looked at Daniel.</p>
+
+    <p>He wasn't surprised.</p>
+
+    <p>"You knew?"</p>
+
+    <p>He looked toward their father's grave.</p>
+
+    <p>"I knew there was more to the story."</p>
+
+    <p>"Why didn't you tell me?"</p>
+
+    <p>"Because you didn't want to hear it."</p>
+
+    <p>Sophie stared at him.</p>
+
+    <p>"I waited eleven years."</p>
+
+    <p>Daniel looked at her.</p>
+
+    <p>"So did I."</p>
+
+    <p>The wind moved through the trees.</p>
+
+    <p>Sophie looked down at the photograph again.</p>
+
+    <p>For the first time, she wondered whether the memory she had spent eleven years protecting was actually a lie.</p>
+
+    <p>And if it was—</p>
+
+    <p>she wasn't sure she wanted to know the truth.</p>
+  </section>
+</article>
+```
+
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta-Reading Report</title>
+  <style>
+    :root {
+      --ink: #24313a;
+      --muted: #66737c;
+      --accent: #8b5e3c;
+      --accent-light: #f3ebe4;
+      --line: #d9dfe2;
+      --paper: #ffffff;
+      --background: #eef1f3;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+.report {
+  max-width: 820px;
+  margin: 48px auto;
+  padding: 64px 72px;
+  background: var(--paper);
+  box-shadow: 0 12px 35px rgba(36, 49, 58, 0.12);
+}
+
+header {
+  margin-bottom: 42px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--accent);
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  letter-spacing: 0.08em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.intro {
+  margin: 0 0 36px;
+  font-size: 1.15rem;
+}
+
+section {
+  margin-top: 38px;
+}
+
+h2 {
+  margin: 0 0 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent);
+  font-size: 1.65rem;
+  line-height: 1.3;
+}
+
+h3 {
+  margin: 28px 0 10px;
+  color: var(--ink);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+.recommendation {
+  margin-top: 42px;
+  padding: 26px 28px;
+  background: var(--accent-light);
+  border-left: 5px solid var(--accent);
+}
+
+.recommendation p:last-child {
+  margin-bottom: 0;
+}
+
+.rating {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 700px) {
+  .report {
+    margin: 0;
+    padding: 40px 24px;
+  }
+
+  body {
+    background: var(--paper);
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="report">
+    <header>
+      <h1>Beta-Reading Report</h1>
+    </header>
+
+```
+<p class="intro">
+  The manuscript's strongest quality is emotional restraint.
+</p>
+
+<p>
+  The characters do not explain everything immediately, which creates room for the reader to interpret their silences.
+</p>
+
+<section aria-labelledby="strengths-heading">
+  <h2 id="strengths-heading">Strengths</h2>
+
+  <h3>Character Relationships</h3>
+  <p>
+    Sophie and Daniel have obvious unresolved history.
+  </p>
+  <p>
+    The manuscript should continue allowing that tension to develop naturally.
+  </p>
+
+  <h3>Emotional Conflict</h3>
+  <p>
+    The father's death creates an excellent reason for the characters to confront their shared past.
+  </p>
+
+  <h3>Mystery</h3>
+  <p>
+    The question of why Sophie left gives the contemporary story a subtle mystery element without changing its literary tone.
+  </p>
+</section>
+
+<section aria-labelledby="improvements-heading">
+  <h2 id="improvements-heading">Suggested Improvements</h2>
+
+  <p>
+    The middle chapters should avoid relying entirely on the mystery.
+  </p>
+  <p>
+    Give Sophie a present-day life outside Daniel.
+  </p>
+  <p>
+    Show what she has built during the eleven years.
+  </p>
+  <p>
+    Then contrast that life with what she left behind.
+  </p>
+</section>
+
+<section class="recommendation" aria-labelledby="recommendation-heading">
+  <h2 id="recommendation-heading">Final Recommendation</h2>
+
+  <p>
+    <strong>Recommend continuing development.</strong>
+  </p>
+
+  <p>
+    The story has strong emotional potential and could appeal to readers who enjoy family secrets, complicated relationships, memory, regret, and second chances.
+  </p>
+
+  <p class="rating">Beta-reader rating: 8.6/10</p>
+</section>
+```
+
+  </main>
+</body>
+</html>
