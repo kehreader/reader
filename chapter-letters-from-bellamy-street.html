@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letters from Bellamy Street</title>
+  <style>
+    :root {
+      --ink: #2f2a26;
+      --muted: #6f655d;
+      --accent: #8b4f45;
+      --paper: #fffdf9;
+      --wash: #f3eee8;
+      --line: #ded4ca;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--wash);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+header {
+  padding: 48px 0 36px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 32px 0 48px;
+}
+
+.metadata div {
+  padding: 18px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.metadata strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+section {
+  margin: 48px 0;
+}
+
+h2 {
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 1.65rem;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  margin-top: 32px;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.manuscript {
+  padding: 42px clamp(24px, 6vw, 72px);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(70, 50, 35, 0.08);
+}
+
+.manuscript p {
+  margin: 0 0 1.25em;
+}
+
+.manuscript p:last-child {
+  margin-bottom: 0;
+}
+
+.dropcap:first-letter {
+  float: left;
+  margin: 0.08em 0.08em 0 0;
+  color: var(--accent);
+  font-size: 4.2em;
+  line-height: 0.8;
+}
+
+.analysis {
+  padding: 28px 32px;
+  background: rgba(255, 253, 249, 0.72);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+}
+
+.analysis p {
+  margin: 0 0 1.2em;
+}
+
+.analysis p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 24px 16px 48px;
+  }
+
+  .metadata {
+    grid-template-columns: 1fr;
+  }
+
+  .manuscript {
+    padding: 28px 22px;
+  }
+
+  .analysis {
+    padding: 22px;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .page {
+    max-width: none;
+    padding: 0;
+  }
+
+  .manuscript,
+  .analysis,
+  .metadata div {
+    box-shadow: none;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Letters from Bellamy Street</h1>
+      <p class="subtitle">Edited Manuscript and Editorial Assessment</p>
+    </header>
+
+```
+<div class="metadata" aria-label="Manuscript details">
+  <div>
+    <strong>Fictional Author</strong>
+    Eleanor Hayes
+  </div>
+  <div>
+    <strong>Manuscript</strong>
+    84,000 words
+  </div>
+  <div>
+    <strong>Editing Type</strong>
+    Developmental + Line Editing
+  </div>
+</div>
+
+<section aria-labelledby="edited-outcome">
+  <h2 id="edited-outcome">Edited Outcome</h2>
+
+  <article class="manuscript">
+    <p class="dropcap">Clara Bellamy had learned to hate the rain.</p>
+
+    <p>It had fallen the morning her father died, turning Bellamy Street into a ribbon of mud and dragging the black carriage wheels deep into the road. She had stood beneath the same stone archway then, watching the house receive mourners while the gutters overflowed around her slippers.</p>
+
+    <p>Five years later, the rain had returned.</p>
+
+    <p>So had the memory.</p>
+
+    <p>Clara stood beneath the archway of Bellamy House, one gloved hand resting against the cold stone. Water gathered along the iron railing and slipped through the bars in silver threads. Beyond the gates, the street blurred beneath a veil of rain.</p>
+
+    <p>Behind her, a floorboard creaked.</p>
+
+    <p>“He’s late,” her mother said.</p>
+
+    <p>Clara did not turn. “Lord Whitmore is not known for haste.”</p>
+
+    <p>“He is known for punctuality when money is involved.”</p>
+
+    <p>The words settled between them.</p>
+
+    <p>Money. The Bellamy estate had been losing it for years—first in small, manageable amounts, then in sums large enough to threaten the house itself. The roof leaked above the west wing. Two tenants had left their farms. The bank had sent three increasingly urgent letters, each one bearing the same final warning.</p>
+
+    <p>Lord Whitmore’s fortune could settle every debt.</p>
+
+    <p>His proposal could save Bellamy House.</p>
+
+    <p>His marriage could save Clara’s family.</p>
+
+    <p>She tightened her fingers around the railing.</p>
+
+    <p>It would also bind her to a man she did not love.</p>
+
+    <p>“Remember why you are doing this,” her mother said more softly.</p>
+
+    <p>Clara looked toward the road. “I remember.”</p>
+
+    <p>“Do you?”</p>
+
+    <p>Clara wanted to say yes. She wanted the answer to be simple.</p>
+
+    <p>Instead, she thought of the house: the faded portraits in the gallery, the library where her father had taught her to read, the rose garden her mother still tended despite the thorns. She thought of the servants who would lose their positions and the tenants who would be forced from land their families had worked for generations.</p>
+
+    <p>Money.</p>
+
+    <p>The house.</p>
+
+    <p>Her family’s future.</p>
+
+    <p>Those reasons were supposed to be enough.</p>
+
+    <p>A carriage appeared at the far end of the street, its dark shape emerging through the rain. Clara straightened and smoothed the damp edge of her glove.</p>
+
+    <p>The carriage stopped before the gates.</p>
+
+    <p>Lord Whitmore stepped down, tall and immaculate despite the weather. He handed his umbrella to the footman and approached with the calm assurance of a man who had never been refused anything important.</p>
+
+    <p>“Miss Bellamy.”</p>
+
+    <p>“Lord Whitmore.”</p>
+
+    <p>His gaze moved over her, approving and possessive in equal measure. “You look beautiful.”</p>
+
+    <p>Clara lowered her eyes. “Thank you.”</p>
+
+    <p>“I hope you are ready for the wedding.”</p>
+
+    <p>The question was delivered as though the ceremony were already decided.</p>
+
+    <p>Clara looked past him toward the rain. For one foolish second, she imagined another carriage waiting at the end of the street. Another man stepping from it. Another life opening before her.</p>
+
+    <p>Thomas.</p>
+
+    <p>Five years had passed since he left Bellamy Street.</p>
+
+    <p>Five years since he had promised to return.</p>
+
+    <p>Five years since Clara had stopped waiting.</p>
+
+    <p>At least, that was what she told herself.</p>
+
+    <p>Lord Whitmore offered his arm.</p>
+
+    <p>After the briefest hesitation, Clara accepted it.</p>
+
+    <p>They had taken only a few steps toward the house when something beyond the gates caught her attention.</p>
+
+    <p>At the far end of the street, a man stood beneath a black umbrella.</p>
+
+    <p>He was too distant for her to see his face clearly, yet she knew him at once—not from his features, but from the stillness of him, from the way he held himself as though the years had changed everything except the shape of his silence.</p>
+
+    <p>Clara stopped walking.</p>
+
+    <p>Lord Whitmore glanced at her. “Is something wrong?”</p>
+
+    <p>The man beneath the umbrella lifted his head.</p>
+
+    <p>Rain streamed between them.</p>
+
+    <p>Thomas had come home.</p>
+  </article>
+</section>
+
+<section aria-labelledby="developmental-editing">
+  <h2 id="developmental-editing">Developmental Editing Outcome</h2>
+
+  <div class="analysis">
+    <p>The opening establishes a strong historical-romance premise: Clara Bellamy is preparing to marry a man she does not love in order to save her family’s estate, just as her former love, Thomas, returns after five years away. The rain, the failing estate, and the unexpected appearance of Thomas create an effective atmosphere of regret, obligation, and unresolved desire.</p>
+
+    <p>To strengthen the manuscript at the developmental level, the opening should provide more context for Clara’s emotional conflict and the Bellamy family’s financial crisis. Lord Whitmore’s role would also benefit from greater complexity so that he feels like a fully realized character rather than only an obstacle. Thomas’s return is compelling, but the manuscript should gradually reveal why he left, why he has returned, and whether Clara can trust him again.</p>
+
+    <p>The central romantic conflict is clear: Clara must choose between duty and love. The story will be strongest if both choices carry meaningful consequences. Clara should have an active role in shaping her future rather than simply reacting to her mother, Lord Whitmore, and Thomas. Her decisions should drive the plot and force her to confront the beliefs that have kept her waiting and grieving.</p>
+
+    <p>The title, <em>Letters from Bellamy Street</em>, suggests that correspondence may play an important role in the novel. If letters are central to the story, they should be introduced early and connected to the mystery of Thomas’s disappearance, Clara’s assumptions about his absence, or the financial circumstances threatening the estate. This would give the title greater narrative significance and create an additional layer of suspense.</p>
+  </div>
+</section>
+
+<section aria-labelledby="line-editing">
+  <h2 id="line-editing">Line Editing Outcome</h2>
+
+  <div class="analysis">
+    <p>The prose has a clear, accessible style and establishes mood efficiently. The repeated references to rain create a useful emotional motif, linking Clara’s present circumstances to the memory of her father’s death. The short paragraphs also give the scene a restrained, dramatic rhythm.</p>
+
+    <p>Several lines can be refined to avoid repetition and deepen the emotional texture. For example, the sequence beginning with “Five years” effectively emphasizes the length of Thomas’s absence, but it can be shaped more deliberately so that the repetition builds toward Clara’s denial rather than simply restating information. The dialogue can also be made more distinctive by giving Clara’s mother and Lord Whitmore clearer individual voices.</p>
+
+    <p>The opening would benefit from more sensory detail and interiority. Clara’s gloves, the rain, the carriage, and the house provide a strong visual foundation, but the scene can become more immersive by showing what Clara feels physically and emotionally as Lord Whitmore approaches. Small details—such as the condition of the estate, the sound of the carriage, or Clara’s reaction to Thomas’s appearance—can make the stakes feel immediate.</p>
+  </div>
+</section>
+
+<footer>
+  Letters from Bellamy Street · Editorial Document
+</footer>
+```
+
+  </main>
+</body>
+</html>
