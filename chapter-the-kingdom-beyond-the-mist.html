@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kingdom Beyond the Mist</title>
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #5b6770;
+      --accent: #6b4f3a;
+      --paper: #fffdf8;
+      --line: #d9d2c5;
+      --mist: #eef2f1;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: linear-gradient(135deg, #dfe7e6, #f5f1e8);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.75;
+}
+
+.book {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.title-page,
+.chapter {
+  background: var(--paper);
+  box-shadow: 0 12px 35px rgba(31, 41, 51, 0.12);
+  border: 1px solid rgba(107, 79, 58, 0.15);
+}
+
+.title-page {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+h1 {
+  max-width: 700px;
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.author {
+  margin: 0 0 2rem;
+  font-size: 1.35rem;
+  color: var(--muted);
+}
+
+.details {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.details span {
+  display: inline-block;
+  margin: 0.25rem 0.75rem;
+}
+
+.chapter {
+  padding: 4rem clamp(1.5rem, 6vw, 5rem);
+}
+
+.chapter-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.prose {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.12rem;
+}
+
+.prose p {
+  margin: 0 0 1.15rem;
+}
+
+.prose p:first-child::first-letter {
+  float: left;
+  margin: 0.1rem 0.35rem 0 0;
+  color: var(--accent);
+  font-size: 4.2rem;
+  line-height: 0.8;
+}
+
+.dialogue {
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .book {
+    padding: 1rem 0.5rem;
+  }
+
+  .title-page {
+    min-height: 60vh;
+    padding: 3rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .chapter {
+    padding: 3rem 1.25rem;
+  }
+
+  .prose {
+    font-size: 1.05rem;
+  }
+
+  .dialogue {
+    margin-left: 0.75rem;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .book {
+    max-width: none;
+    padding: 0;
+  }
+
+  .title-page,
+  .chapter {
+    box-shadow: none;
+    border: 0;
+  }
+
+  .title-page {
+    min-height: 100vh;
+    page-break-after: always;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="book">
+    <section class="title-page" aria-labelledby="book-title">
+      <h1 id="book-title">The Kingdom Beyond the Mist</h1>
+      <p class="author">Elian Vale</p>
+      <p class="details">
+        <span><strong>Genre:</strong> High Fantasy</span>
+        <span><strong>Manuscript Length:</strong> 103,000 words</span>
+      </p>
+    </section>
+
+```
+<article class="chapter">
+  <header class="chapter-heading">
+    <h2>Chapter One</h2>
+    <h3>The Border</h3>
+  </header>
+
+  <section class="prose">
+    <p>The kingdom had feared the mist for four hundred years.</p>
+
+    <p>Children were taught never to approach it.</p>
+
+    <p>Soldiers were forbidden from entering it.</p>
+
+    <p>Even kings avoided speaking its name.</p>
+
+    <p>Elara had grown up hearing stories about what lived beyond the silver wall of fog.</p>
+
+    <p>Monsters.</p>
+
+    <p>Lost kingdoms.</p>
+
+    <p>Dead kings.</p>
+
+    <p>People who entered and returned without aging.</p>
+
+    <p>She had never believed any of them.</p>
+
+    <p>Until her brother disappeared.</p>
+
+    <p>Prince Kael had vanished four days earlier.</p>
+
+    <p>No guards.</p>
+
+    <p>No horses.</p>
+
+    <p>No footprints.</p>
+
+    <p>Nothing.</p>
+
+    <p>The king had ordered the entire northern forest searched.</p>
+
+    <p>Nothing was found.</p>
+
+    <p>Elara knew what her father refused to admit.</p>
+
+    <p>Kael had gone toward the mist.</p>
+
+    <p>She stood at the forest boundary before sunrise.</p>
+
+    <p>Her horse waited behind her.</p>
+
+    <p>She looked back toward the castle.</p>
+
+    <p>Then toward the mist.</p>
+
+    <p class="dialogue">“I’ll bring you home,” she whispered.</p>
+
+    <p>The mist moved.</p>
+
+    <p>A voice came from inside.</p>
+
+    <p class="dialogue">“Elara.”</p>
+
+    <p>She froze.</p>
+
+    <p>She knew that voice.</p>
+
+    <p class="dialogue">“Kael?”</p>
+
+    <p>Something moved between the trees.</p>
+
+    <p>A boy stepped forward.</p>
+
+    <p>Elara’s sword came free.</p>
+
+    <p>The boy looked twelve years old.</p>
+
+    <p>Kael had been twenty-one.</p>
+
+    <p>But the face was unmistakable.</p>
+
+    <p>Her brother.</p>
+
+    <p class="dialogue">“You shouldn’t be here,” he said.</p>
+
+    <p>Elara’s hands trembled.</p>
+
+    <p class="dialogue">“What happened to you?”</p>
+
+    <p>Kael looked over his shoulder.</p>
+
+    <p class="dialogue">“They know you’re coming.”</p>
+
+    <p class="dialogue">“Who?”</p>
+
+    <p>The mist behind him began to glow.</p>
+
+    <p>Kael grabbed her arm.</p>
+
+    <p class="dialogue">“Run.”</p>
+
+    <p>The forest erupted with sound.</p>
+
+    <p>Something enormous moved beneath the fog.</p>
+
+    <p>Elara ran.</p>
+
+    <p>Not away from the mist.</p>
+
+    <p>Into it.</p>
+
+    <p>Because her brother was already disappearing inside.</p>
+  </section>
+</article>
+```
+
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta-Reading Report</title>
+  <style>
+    :root {
+      --ink: #243447;
+      --muted: #5f6f7f;
+      --accent: #8b5e3c;
+      --accent-light: #f3e9df;
+      --paper: #fffdf9;
+      --line: #e5ddd4;
+      --background: #f1eee9;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+.report {
+  width: min(900px, calc(100% - 2rem));
+  margin: 3rem auto;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 45px rgba(36, 52, 71, 0.12);
+}
+
+header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  font-size: 1.45rem;
+}
+
+p {
+  margin: 0 0 1.25rem;
+  font-size: 1.08rem;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  padding-left: 0.35rem;
+}
+
+.overall {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background: var(--accent-light);
+  border-left: 5px solid var(--accent);
+}
+
+.rating {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.65rem 1rem;
+  color: #fff;
+  background: var(--accent);
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 600px) {
+  .report {
+    width: 100%;
+    margin: 0;
+    border: 0;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="report">
+    <header>
+      <h1>Beta-Reading Report</h1>
+      <p class="lead">
+        The manuscript has a strong traditional fantasy foundation but would benefit
+        from expanding the relationship between Elara and Kael before the central adventure.
+      </p>
+    </header>
+
+```
+<section aria-labelledby="strength">
+  <h2 id="strength">Strongest Element</h2>
+  <p>
+    The strongest element is the mysterious age difference.
+  </p>
+  <p>
+    The question of why Kael appears twelve years old when he disappeared at twenty-one
+    creates immediate curiosity.
+  </p>
+</section>
+
+<section aria-labelledby="recommendations">
+  <h2 id="recommendations">Recommended Improvements</h2>
+  <ul>
+    <li>Establish the kingdom's political situation.</li>
+    <li>Give Elara a personal flaw.</li>
+    <li>Introduce the rules of the magic system gradually.</li>
+    <li>Make the mist an active part of the story.</li>
+    <li>Give Kael a reason for not simply returning home.</li>
+  </ul>
+</section>
+
+<section class="overall" aria-labelledby="overall">
+  <h2 id="overall">Overall</h2>
+  <p>
+    The manuscript has strong potential for readers who enjoy fantasy mysteries,
+    forbidden kingdoms, magical realms, and sibling-centered adventures.
+  </p>
+  <div class="rating">Beta-reader rating: 8.7/10</div>
+</section>
+```
+
+  </main>
+</body>
+</html>
