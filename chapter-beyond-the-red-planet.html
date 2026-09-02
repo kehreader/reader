@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Red Planet</title>
+  <style>
+    :root {
+      --background: #f4f1ea;
+      --paper: #fffdf8;
+      --text: #242424;
+      --muted: #6d6a63;
+      --accent: #8f2f24;
+      --rule: #d8d1c5;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.8;
+}
+
+.book {
+  width: min(100% - 2rem, 900px);
+  margin: 3rem auto;
+  background: var(--paper);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  padding: 5rem 4rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: var(--accent);
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+}
+
+.author,
+.metadata {
+  margin: 0.5rem 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.metadata {
+  font-style: italic;
+}
+
+main {
+  padding: 4rem;
+}
+
+.chapter-label {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 3rem;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.manuscript p {
+  margin: 0 0 1.35rem;
+  font-size: 1.15rem;
+}
+
+.manuscript p:first-of-type::first-letter {
+  float: left;
+  margin: 0.08em 0.08em 0 0;
+  color: var(--accent);
+  font-size: 4.2rem;
+  line-height: 0.8;
+}
+
+.message {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--accent);
+  background: #f7eee9;
+  color: #5d211b;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .book {
+    width: 100%;
+    margin: 0;
+  }
+
+  header,
+  main {
+    padding: 3rem 1.5rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .manuscript p {
+    font-size: 1.05rem;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <article class="book">
+    <header>
+      <h1>Beyond the Red Planet</h1>
+      <p class="author"><strong>Author:</strong> Marcus Hale</p>
+      <p class="metadata"><strong>Genre:</strong> Science Fiction</p>
+      <p class="metadata"><strong>Manuscript Length:</strong> 87,000 words</p>
+    </header>
+
+```
+<main>
+  <section aria-labelledby="chapter-one-title">
+    <p class="chapter-label">Chapter One</p>
+    <h2 id="chapter-one-title">The Signal</h2>
+
+    <div class="manuscript">
+      <p>For six months, Captain Elias had listened to silence.</p>
+
+      <p>Space was different from what he had imagined as a child.</p>
+
+      <p>It wasn't beautiful.</p>
+
+      <p>It was enormous.</p>
+
+      <p>Empty.</p>
+
+      <p>Unforgiving.</p>
+
+      <p>The Horizon moved through it like a grain of sand through an ocean.</p>
+
+      <p>Mars had disappeared behind them two days ago.</p>
+
+      <p>Earth was still thirty-one million kilometers away.</p>
+
+      <p>Home.</p>
+
+      <p>Elias looked at the photograph attached beside his console.</p>
+
+      <p>His daughter was smiling.</p>
+
+      <p>She had lost two front teeth when the picture was taken.</p>
+
+      <p>He touched the corner of the photograph.</p>
+
+      <p>"Almost home."</p>
+
+      <p>The radio crackled.</p>
+
+      <p>Elias looked up.</p>
+
+      <p>Three pulses.</p>
+
+      <p>Then silence.</p>
+
+      <p>He replayed the recording.</p>
+
+      <p>Three pulses.</p>
+
+      <p>"Engineering?"</p>
+
+      <p>A voice answered.</p>
+
+      <p>"Yes, Captain?"</p>
+
+      <p>"Did you hear that?"</p>
+
+      <p>"Hear what?"</p>
+
+      <p>Elias replayed it.</p>
+
+      <p>The bridge became quiet.</p>
+
+      <p>Then the radio spoke again.</p>
+
+      <p>"Are you still there?"</p>
+
+      <p>Nobody moved.</p>
+
+      <p>Elias leaned toward the receiver.</p>
+
+      <p>"This is the exploration vessel Horizon. Identify yourself."</p>
+
+      <p>Static.</p>
+
+      <p>Then:</p>
+
+      <p>"We are what's left."</p>
+
+      <p>The signal disappeared.</p>
+
+      <p>Elias looked at his crew.</p>
+
+      <p>"Trace it."</p>
+
+      <p>The navigation officer shook his head.</p>
+
+      <p>"I can't."</p>
+
+      <p>"Why?"</p>
+
+      <p>"Because it isn't coming from outside."</p>
+
+      <p>Elias frowned.</p>
+
+      <p>"Then where?"</p>
+
+      <p>The officer pointed toward the screen.</p>
+
+      <p>"It's coming from Earth."</p>
+
+      <p>The bridge went silent.</p>
+
+      <p>Earth was supposed to be sending no signals.</p>
+
+      <p>The mission control network had gone quiet fourteen hours earlier.</p>
+
+      <p>Elias stared at the coordinates.</p>
+
+      <p>A second message arrived.</p>
+
+      <p class="message">DO NOT COME HOME.</p>
+
+      <p>Then the ship turned.</p>
+
+      <p>Every warning alarm began screaming.</p>
+
+      <p>Elias grabbed the controls.</p>
+
+      <p>"Who changed our course?"</p>
+
+      <p>Nobody answered.</p>
+
+      <p>Because nobody had touched them.</p>
+    </div>
+  </section>
+</main>
+```
+
+  </article>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta-Reading Report</title>
+  <style>
+    :root {
+      --background: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #64748b;
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+      --border: #e2e8f0;
+      --rating: #f59e0b;
+    }
+
+```
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: min(900px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.report {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+header {
+  padding: 3rem 3.5rem 2.5rem;
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0;
+  color: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+}
+
+.content {
+  padding: 3rem 3.5rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  font-size: 1.08rem;
+}
+
+section {
+  margin-top: 2.75rem;
+}
+
+h2 {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.65rem;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent-light);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.45rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  padding-left: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.feature {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-left: 5px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+}
+
+.question {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--accent-light);
+  border-radius: 10px;
+  color: #1e3a8a;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rating {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 999px;
+  color: #92400e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 1rem, 900px);
+    padding: 1rem 0;
+  }
+
+  header,
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .report {
+    border-radius: 12px;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+}
+```
+
+  </style>
+</head>
+<body>
+  <main class="container">
+    <article class="report">
+      <header>
+        <h1>Beta-Reading Report</h1>
+      </header>
+
+```
+  <div class="content">
+    <p>
+      The manuscript has an effective combination of isolation, technological mystery,
+      and emotional stakes.
+    </p>
+
+    <p>
+      The biggest strength is the connection between the larger science-fiction mystery
+      and Elias's personal desire to return home.
+    </p>
+
+    <section aria-labelledby="recommended-improvements">
+      <h2 id="recommended-improvements">Recommended Improvements</h2>
+
+      <ul>
+        <li>The crew should receive stronger characterization early.</li>
+        <li>Give each major crew member a recognizable personality and relationship with Elias.</li>
+        <li>The technology should remain understandable rather than becoming overly technical.</li>
+        <li>The mystery surrounding Earth should unfold gradually.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="best-feature">
+      <h2 id="best-feature">Best Feature</h2>
+
+      <div class="feature">
+        <p>
+          The ending of Chapter One creates an immediate question:
+        </p>
+
+        <div class="question">Who is controlling the ship?</div>
+
+        <p>
+          That is strong enough to carry the reader into Chapter Two.
+        </p>
+      </div>
+
+      <div class="rating">Beta-reader rating: 8.8/10</div>
+    </section>
+  </div>
+</article>
+```
+
+  </main>
+</body>
+</html>
