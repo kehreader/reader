@@ -296,27 +296,33 @@
   .section-head .marginalia{ max-width: 220px; text-align:right; }
 
   /* ---------- services / journey ---------- */
-  .journey{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    position: relative;
-  }
-  @media (max-width: 880px){
-    .journey{ grid-template-columns: 1fr; gap: 20px; }
-  }
-  .stage{
-    padding: 28px 24px;
-    position: relative;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 3px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
-  }
-  .stage:hover{
-    transform: translateY(-6px);
-    border-color: var(--gold);
-  }
+ .journey {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.services-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.stage {
+  flex: 0 0 calc(25% - 15px);
+  box-sizing: border-box;
+  padding: 28px 24px;
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.stage:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+}
   .stage-num{
     font-family:'Courier Prime', monospace;
     font-size: 0.78rem;
@@ -335,6 +341,65 @@
     font-size: 0.93rem;
     margin: 0;
   }
+  .services-slider {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 45px;
+}
+
+.services-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.service-next {
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+
+  background: var(--surface);
+  color: var(--gold);
+
+  font-size: 22px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.service-next:hover {
+  background: var(--gold);
+  color: var(--surface);
+  transform: translateX(3px);
+}
+  @media (max-width: 880px) {
+  .stage {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .stage {
+    flex: 0 0 100%;
+  }
+
+  .services-slider {
+    gap: 10px;
+  }
+
+  .service-next {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+  }
+}
 
   /* ---------- work / bookshelf ---------- */
   .shelf{
@@ -687,44 +752,79 @@
   <hr class="stitch">
 
   <!-- SERVICES -->
-  <section id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">How a book gets made</span>
-          <h2>Four stages, one shelf-ready book</h2>
-        </div>
-      </div>
+<section id="services">
+  <div class="wrap">
 
-      <div class="journey">
-        <div class="stage">
-          <h3>Beta Reading</h3>
-          <p>A full read from a real reader's, seat pacing, plot holes,
-          characters that don't land, and where attention drifts. Notes
-          you can act on, not just praise.</p>
-        </div>
-        <div class="stage">
-          <h3>Developmental &amp; Line Editing</h3>
-          <p>Structural passes for story and argument, then sentence-level
-          editing for voice, rhythm, and clarity without flattening
-          what makes it yours.</p>
-        </div>
-        <div class="stage">
-          <h3>Cover Design</h3>
-          <p>Genre-aware covers built to work as a thumbnail first and a
-          print jacket second, with typography and imagery that signal
-          the right promise to the right reader.</p>
-        </div>
-        <div class="stage">
-          <h3>Book Marketing</h3>
-          <p>Positioning, blurb, categories, and a launch sequence,
-          the unglamorous work that decides whether the book everyone
-          worked on actually gets found.</p>
-        </div>
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">How a book gets made</span>
+        <h2>Five stages, one shelf-ready book</h2>
       </div>
     </div>
-  </section>
 
+    <div class="services-slider">
+
+      <div class="services-window">
+        <div class="journey">
+
+          <div class="stage">
+            <h3>Beta Reading</h3>
+            <p>
+              A full read from a real reader's seat, pacing, plot holes,
+              characters that don't land, and where attention drifts.
+              Notes you can act on, not just praise.
+            </p>
+          </div>
+
+          <div class="stage">
+            <h3>Developmental &amp; Line Editing</h3>
+            <p>
+              Structural passes for story and argument, then sentence-level
+              editing for voice, rhythm, and clarity without flattening
+              what makes it yours.
+            </p>
+          </div>
+
+          <div class="stage">
+            <h3>Cover Design</h3>
+            <p>
+              Genre-aware covers built to work as a thumbnail first and a
+              print jacket second, with typography and imagery that signal
+              the right promise to the right reader.
+            </p>
+          </div>
+
+          <div class="stage">
+            <h3>Book Marketing</h3>
+            <p>
+              Positioning, blurb, categories, and a launch sequence,
+              the unglamorous work that decides whether the book everyone
+              worked on actually gets found.
+            </p>
+          </div>
+
+          <!-- FIFTH SERVICE -->
+          <div class="stage">
+            <h3>AI cinematic video creation</h3>
+            <p>
+              transforming ideas into engaging visual stories with dynamic scenes, realistic motion,
+              atmospheric lighting, creative direction, and professional cinematic effects.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT ARROW -->
+      <button class="service-next" aria-label="Next services">
+        &#10095;
+      </button>
+
+    </div>
+
+  </div>
+</section>
+  
   <hr class="stitch">
 
   <!-- WORK -->
