@@ -555,6 +555,42 @@
   @media (max-width: 480px){
     .stats-grid.double{ grid-template-columns: 1fr; gap: 20px; }
   }
+   /* ---------- characteristics / journey ---------- */  
+  .journey{
+    display:grid;    
+    grid-template-columns: repeat(4, 1fr);    
+    gap: 20px;    
+    position: relative;  
+  }  
+  @media (max-width: 880px){    
+    .journey{ grid-template-columns: 1fr; gap: 20px; }  
+  }  .stage{    
+    padding: 28px 24px;    
+    position: relative;    
+    background: var(--surface);    
+    border: 1px solid var(--line);    
+    border-radius: 3px;    
+    transition: transform 0.2s ease, border-color 0.2s ease;  
+  }  
+  .stage:hover{    
+    transform: translateY(-6px);    
+    border-color: var(--gold);  
+  }  
+  .stage-num{    
+    font-family:'Courier Prime', monospace;    
+    font-size: 0.78rem;    color: var(--gold);    
+    letter-spacing: 0.08em;    margin-bottom: 14px;    
+    display:block;  
+  }  
+  .stage h3{    
+    font-size: 1.22rem;   
+    margin-bottom: 12px;    
+    color: var(--cream);  
+  }  
+  .stage p{    
+    color: var(--cream-dim);    
+    font-size: 0.93rem;    
+    margin: 0;  }
 
   /* ---------- testimonials ---------- */
   .cta-band{
@@ -937,7 +973,7 @@
 <hr class="stitch">
 
    <!-- SERVICES -->
-  <section id="services">
+  <section id="characteristics">
     <div class="wrap">
       <div class="section-head">
         <div>
