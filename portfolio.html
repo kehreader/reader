@@ -1168,5 +1168,90 @@ publishers, except for brief quotations used in reviews or critic al articles.</
   });
 </script>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slider = document.querySelector(".journey");
+
+  const nextButton =
+    document.querySelector(".service-next");
+
+  const cards =
+    document.querySelectorAll(".stage");
+
+  let currentPosition = 0;
+
+
+  function getCardsVisible() {
+
+    if (window.innerWidth <= 600) {
+      return 1;
+    }
+
+    if (window.innerWidth <= 880) {
+      return 2;
+    }
+
+    return 4;
+  }
+
+
+  function moveNext() {
+
+    const visibleCards =
+      getCardsVisible();
+
+    const gap = 20;
+
+    const cardWidth =
+      cards[0].offsetWidth + gap;
+
+    const maximumPosition =
+      cards.length - visibleCards;
+
+
+    if (currentPosition < maximumPosition) {
+
+      currentPosition++;
+
+    } else {
+
+      currentPosition = 0;
+
+    }
+
+
+    slider.style.transform =
+      "translateX(-" +
+      (currentPosition * cardWidth) +
+      "px";
+
+  }
+
+
+  nextButton.addEventListener(
+    "click",
+    moveNext
+  );
+
+
+  window.addEventListener(
+    "resize",
+    function () {
+
+      currentPosition = 0;
+
+      slider.style.transform =
+        "translateX(0)";
+
+    }
+  );
+
+});
+
+</script>
+
 </body>
 </html>
+  
