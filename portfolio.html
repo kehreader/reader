@@ -296,67 +296,101 @@
   .section-head .marginalia{ max-width: 220px; text-align:right; }
 
   /* ---------- services / journey ---------- */
- .journey {
+
+.services-slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+  margin-top: 45px;
+}
+
+
+/* ---------- SERVICE WINDOW ---------- */
+
+.services-window {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+
+/* ---------- MOVING SERVICE CARDS ---------- */
+
+.journey {
   display: flex;
   gap: 20px;
   position: relative;
   transition: transform 0.5s ease;
 }
 
-.services-window {
-  overflow: hidden;
-  width: 100%;
-}
+
+/* ---------- SERVICE CARD ---------- */
 
 .stage {
   flex: 0 0 calc(25% - 15px);
   box-sizing: border-box;
+
   padding: 28px 24px;
   position: relative;
+
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 3px;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
+
 
 .stage:hover {
   transform: translateY(-6px);
   border-color: var(--gold);
 }
-  .stage-num{
-    font-family:'Courier Prime', monospace;
-    font-size: 0.78rem;
-    color: var(--gold);
-    letter-spacing: 0.08em;
-    margin-bottom: 14px;
-    display:block;
-  }
-  .stage h3{
-    font-size: 1.22rem;
-    margin-bottom: 12px;
-    color: var(--cream);
-  }
-  .stage p{
-    color: var(--cream-dim);
-    font-size: 0.93rem;
-    margin: 0;
-  }
-  .services-slider {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-top: 45px;
+
+
+/* ---------- SERVICE NUMBER ---------- */
+
+.stage-num {
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+  display: block;
 }
 
-.services-window {
-  overflow: hidden;
-  width: 100%;
+
+/* ---------- SERVICE TITLE ---------- */
+
+.stage h3 {
+  font-size: 1.22rem;
+  margin-bottom: 12px;
+  color: var(--cream);
 }
 
+
+/* ---------- SERVICE DESCRIPTION ---------- */
+
+.stage p {
+  color: var(--cream-dim);
+  font-size: 0.93rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+
+/* ---------- LEFT + RIGHT ARROWS ---------- */
+
+.service-prev,
 .service-next {
   flex: 0 0 48px;
+
   width: 48px;
   height: 48px;
+
+  padding: 0;
 
   border: 1px solid var(--gold);
   border-radius: 50%;
@@ -365,40 +399,72 @@
   color: var(--gold);
 
   font-size: 22px;
+  line-height: 1;
+
   cursor: pointer;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  transition: all 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
+
+
+/* ---------- LEFT ARROW ---------- */
+
+.service-prev:hover {
+  background: var(--gold);
+  color: var(--surface);
+  transform: translateX(-3px);
+}
+
+
+/* ---------- RIGHT ARROW ---------- */
 
 .service-next:hover {
   background: var(--gold);
   color: var(--surface);
   transform: translateX(3px);
 }
-  @media (max-width: 880px) {
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 880px) {
+
   .stage {
     flex: 0 0 calc(50% - 10px);
   }
+
 }
 
+
+/* ---------- MOBILE ---------- */
+
 @media (max-width: 600px) {
-  .stage {
-    flex: 0 0 100%;
-  }
 
   .services-slider {
     gap: 10px;
   }
 
+  .stage {
+    flex: 0 0 100%;
+  }
+
+  .service-prev,
   .service-next {
     flex: 0 0 42px;
+
     width: 42px;
     height: 42px;
+
+    font-size: 19px;
   }
+
 }
 
   /* ---------- work / bookshelf ---------- */
@@ -852,6 +918,13 @@
 
       <!-- RIGHT ARROW -->
       <button class="service-next" aria-label="Next services">
+        &#10095;
+      </button>
+
+    </div>
+
+       <!-- LEFT ARROW -->
+      <button class="service-previous" aria-label="previous services">
         &#10095;
       </button>
 
