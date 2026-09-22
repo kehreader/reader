@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leave a Review | Author's Atelier</title>
+
+  <style>
+    body {
+      background: #14181c;
+      color: #ede6d6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    .review-page {
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #c6a15b;
+    }
+
+    label {
+      display: block;
+      margin: 20px 0 8px;
+      color: #c6a15b;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 13px;
+      background: #242c34;
+      border: 1px solid rgba(237,230,214,.28);
+      color: #ede6d6;
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #c6a15b;
+      color: #14181c;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="review-page">
+
+    <span>AUTHOR'S ATELIER</span>
+
+    <h1>Share Your Experience</h1>
+
+    <p>
+      If you've worked with me, I'd love to hear about your experience.
+    </p>
+
+    <form
+      action="YOUR_REVIEW_FORM_ENDPOINT"
+      method="POST">
+
+      <label for="name">Your Name</label>
+
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required>
+
+
+      <label for="book">Book Title</label>
+
+      <input
+        type="text"
+        id="book"
+        name="book"
+        required>
+
+
+      <label for="service">Service</label>
+
+      <select id="service" name="service" required>
+
+        <option value="">Select a service</option>
+
+        <option>Beta Reading</option>
+
+        <option>Developmental & Line Editing</option>
+
+        <option>Book Cover Design</option>
+
+        <option>Book Marketing</option>
+
+        <option>AI Cinematic Video Creation</option>
+
+      </select>
+
+
+      <label for="rating">Rating</label>
+
+      <select id="rating" name="rating" required>
+
+        <option value="">Choose a rating</option>
+
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★</option>
+        <option value="3">★★★</option>
+        <option value="2">★★</option>
+        <option value="1">★</option>
+
+      </select>
+
+
+      <label for="review">Your Review</label>
+
+      <textarea
+        id="review"
+        name="review"
+        required></textarea>
+
+
+      <button type="submit">
+        Submit Review
+      </button>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
