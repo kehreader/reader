@@ -1601,17 +1601,70 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<!-- Supabase -->
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
-  const SUPABASE_URL = "https://vwfukfgmsftluxpgwhsv.supabase.co/rest/v1/";
+  const SUPABASE_URL = "https://vwfukfgmsftluxpgwhsv.supabase.co";
   const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_NPnMlf81-jMQ7TQOuJ9RvA_3l_tmjLA";
 
   const supabaseClient = supabase.createClient(
     SUPABASE_URL,
     SUPABASE_PUBLISHABLE_KEY
   );
+
+  async function loadApprovedReviews() {
+
+    const grid = document.getElementById("praise-grid");
+
+    if (!grid) {
+      console.error("praise-grid was not found on the homepage.");
+      return;
+    }
+
+    const { data, error } = await supabaseClient
+      .from("reviews")
+      .select("id,name,book,service,rating,review,created_at")
+      .eq("approved", true)
+      .order("created_at", { ascending: false });
+
+    if (error) {
+      console.error("Could not load reviews:", error);
+      return;
+    }
+
+    data.forEach(function(item) {
+
+      const card = document.createElement("div");
+      card.className = "praise";
+
+      const stars =
+        "★".repeat(Number(item.rating)) +
+        "☆".repeat(5 - Number(item.rating));
+
+      card.innerHTML = `
+        <div class="stars">${stars}</div>
+
+        <p>"${escapeHtml(item.review)}"</p>
+
+        <div class="who">
+          — ${escapeHtml(item.name)}, ${escapeHtml(item.book)}
+        </div>
+      `;
+
+      grid.appendChild(card);
+    });
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  }
+
+  loadApprovedReviews();
 </script>
 
 </body>
