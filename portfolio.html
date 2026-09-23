@@ -1514,5 +1514,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<!-- Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  const SUPABASE_URL = "https://vwfukfgmsftluxpgwhsv.supabase.co/rest/v1/";
+  const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_NPnMlf81-jMQ7TQOuJ9RvA_3l_tmjLA";
+
+  const supabaseClient = supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLISHABLE_KEY
+  );
+</script>
+
 </body>
 </html>
