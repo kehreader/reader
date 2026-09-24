@@ -42,7 +42,7 @@
 <div class="status" id="status" role="status"></div>
 </form>
 </div>
-<a class="back" href="index.html">← Back to portfolio</a>
+<a class="back" href="portfolio.html">← Back to portfolio</a>
 </div></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
@@ -60,20 +60,20 @@ let selectedRating = 0;
 
 function updateStars(value) {
   ratingLabels.forEach((label, index) => {
-    label.classList.toggle("active", index < value);
+    label.classList.toggle("active", portfolio < value);
   });
 }
 
-ratingLabels.forEach((label, index) => {
+ratingLabels.forEach((label, portfolio) => {
   label.addEventListener("click", function(e) {
     e.preventDefault();
-    const value = index + 1;
+    const value = portfolio + 1;
     if (selectedRating === value) {
       selectedRating = 0;
       ratingInputs.forEach(input => input.checked = false);
     } else {
       selectedRating = value;
-      ratingInputs.forEach((input, i) => input.checked = i === index);
+      ratingInputs.forEach((input, i) => input.checked = i === portfolio);
     }
     updateStars(selectedRating);
   });
