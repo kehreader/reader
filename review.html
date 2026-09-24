@@ -60,20 +60,20 @@ let selectedRating = 0;
 
 function updateStars(value) {
   ratingLabels.forEach((label, index) => {
-    label.classList.toggle("active", portfolio < value);
+    label.classList.toggle("active", index < value);
   });
 }
 
-ratingLabels.forEach((label, portfolio) => {
+ratingLabels.forEach((label, index) => {
   label.addEventListener("click", function(e) {
     e.preventDefault();
-    const value = portfolio + 1;
+    const value = index + 1;
     if (selectedRating === value) {
       selectedRating = 0;
       ratingInputs.forEach(input => input.checked = false);
     } else {
       selectedRating = value;
-      ratingInputs.forEach((input, i) => input.checked = i === portfolio);
+      ratingInputs.forEach((input, i) => input.checked = i === index);
     }
     updateStars(selectedRating);
   });
