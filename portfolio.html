@@ -1623,7 +1623,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const { data, error } = await supabaseClient
       .from("reviews")
-      .select("id,name,book,service,rating,review,created_at")
+      .select(
+        "id,name,book,service,rating,review,created_at"
+      )
       .eq("approved", true)
       .order("created_at", { ascending: false });
 
@@ -1647,7 +1649,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>"${escapeHtml(item.review)}"</p>
 
         <div class="who">
-          — ${escapeHtml(item.name)}, ${escapeHtml(item.book)}
+          — 
+          ${escapeHtml(item.name)}, 
+          ${escapeHtml(item.book)}
         </div>
       `;
 
