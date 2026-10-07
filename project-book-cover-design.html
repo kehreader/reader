@@ -161,6 +161,104 @@
     color: var(--cream-dim);
     letter-spacing: 0.04em;
   }
+  /* ---------- MOBILE PAGE WIDTH FIX ---------- */
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+  }
+
+  header .wrap {
+    width: 100%;
+  }
+
+  .hero.wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  section > .wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Prevent long text from pushing the page sideways */
+  h1,
+  h2,
+  p,
+  a,
+  span {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* Portfolio cards */
+  .cover-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .cover-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Footer */
+  .sw-footer {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .sw-footer .wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .sw-footer-brand,
+  .sw-footer-col {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .sw-footer-brand p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .sw-footer-col a {
+    overflow-wrap: anywhere;
+  }
+}
 
 </style>
 </head>
