@@ -147,6 +147,65 @@
     justify-content: center;
   }
 }
+  /* ---------- CONTACT FORM PHONE WIDTH FIX ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .contact > * {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .field {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .field input,
+  .field textarea,
+  .field select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .field textarea {
+    resize: vertical;
+  }
+
+  .colophon {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .colophon .row {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
 
 
   .sw-footer{
