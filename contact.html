@@ -91,6 +91,62 @@
     text-decoration:none;
   }
   .info-row a.value:hover{ color: var(--gold-bright); }
+  /* ---------- CONTACT FORM MOBILE ALIGNMENT ---------- */
+
+@media (max-width: 860px){
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .contact > *{
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+
+  /* Contact form fields */
+  .contact .field{
+    width: 100%;
+    text-align: left;
+  }
+
+  .contact .field label{
+    text-align: left;
+  }
+
+  .contact .field input,
+  .contact .field textarea,
+  .contact .field select{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Contact information / colophon */
+  .contact .colophon{
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact .colophon .row{
+    text-align: center;
+  }
+
+  /* Center buttons inside the contact area */
+  .contact .btn{
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+}
 
 
   .sw-footer{
