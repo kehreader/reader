@@ -283,7 +283,165 @@
     font-size: 0.7rem;
     color: var(--cream-dim);
     letter-spacing: 0.04em;
+  }/* ==============================
+   MOBILE RESPONSIVE FIX
+   ============================== */
+
+@media (max-width: 600px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
+
+  /* Main page containers */
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+  }
+
+  /* Hero */
+  .hero.wrap {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  /* Small information grid */
+  .meta-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  /* All sections */
+  section {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  section > .wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  section h2,
+  section h3,
+  section p,
+  section li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  /* Manuscript excerpt box */
+  .excerpt {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+  }
+
+  .excerpt p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  /* Report content */
+  .report-block {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .report-block ul {
+    padding-left: 20px;
+    max-width: 100%;
+  }
+
+  .report-block li {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  /* PDF buttons */
+  .doc-link {
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Rating */
+  .rating-row {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  .sw-footer {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .sw-footer .wrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .sw-footer-grid {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .sw-footer-brand,
+  .sw-footer-col {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .sw-footer-brand p {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .sw-footer-col a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  /* Social icons */
+  .sw-social-row {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+
+}
+  
 
 </style>
 </head>
